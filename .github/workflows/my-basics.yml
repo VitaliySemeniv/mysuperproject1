@@ -16,9 +16,9 @@ jobs:
 
 steps:
 -name: Print Hello world Message
- run:echo Hello world from testing job
+ run: echo Hello world from testing job
   
 my_deploy:
   runs-on: ubuntu-latest
   steps:
-  - name:Print hello wold
+  - name: Print hello world
