@@ -1,27 +1,15 @@
-#----------
-
-# GitHub-basics
-#-----
 name: My-GitHubActions-Basics
-
 
 on: 
   push:
     branches:
-      -master
+      - master
 
 jobs:
   my_testing:
     runs-on: ubuntu-latest
 
-steps:
--name: Print Hello Message
- run :  echo "Hello world from Testing job"
-  
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello world from Testing job"
 
-my_deploy:
-  runs-on: ubuntu-latest
-
-  steps:
-  - name: Print Hello Message
-    run: echo "Hello World from deploy job"
